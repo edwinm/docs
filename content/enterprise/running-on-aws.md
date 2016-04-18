@@ -40,7 +40,7 @@ Port | Reason
 8800 | Admin web console
 ```
 
-You’ll also need SSH access into your instance, so include port 22 in your security group. Then give your security group a name that you will recognize later, like “npmo”:
+You’ll also need SSH access into your instance, so include port 22 in your security group. Then give your security group a name that you will recognize later, like “npme”:
 
 ![Security Group Inbound](/images/npmo-aws2.png)
 
@@ -216,7 +216,7 @@ Let’s make sure we have proper file permissions on our new mount point, and cr
 
 ```sh
 $ sudo chown -R $(whoami):$(id -gn) /data
-$ mkdir /data/npmo
+$ mkdir /data/npme
 ```
 
 Our EBS volume is now ready to go, and we can install Node.js and npm On-Site!
@@ -234,15 +234,15 @@ $ sudo yum -y install nodejs
 $ sudo npm install npm@latest -g
 ```
 
-Next, install `npmo` and answer any prompts:
+Next, install `npme` and answer any prompts:
 
 ```sh
-$ sudo npm install npmo -g --unsafe
+$ sudo npm install npme -g --unsafe
 ```
 
 Once that’s done, complete the installation by configuring your On-Site instance via the admin web console at `https://<your-server>:8800`. At this point we’ll defer to the [installation doc](/enterprise/installation#3-configure-your-installation-via-the-admin-web-console), with the exception that we should configure storage settings to use our mounted EBS volume.
 
-When you reach the Settings page, find the “Storage” section and change the `/usr/local/lib/npme` path prefix to `/data/npmo` for all configured paths:
+When you reach the Settings page, find the “Storage” section and change the `/usr/local/lib/npme` path prefix to `/data/npme` for all configured paths:
 
 ![Storage Settings](/images/npmo-aws13.png)
 

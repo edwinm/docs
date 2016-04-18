@@ -3,9 +3,9 @@ order: 2
 title: Requirements
 -->
 
-# npm On-Site Prerequisites
+# npm Enterprise Prerequisites
 
-To install the latest version of npm On-Site, you need a server fulfilling these basic specs:
+To install the latest version of npm Enterprise, you need a server fulfilling these basic specs:
 
 - 64-bit architecture
 - Kernel version 3.10 or higher
@@ -29,11 +29,11 @@ If using Amazon Web Services, see [note on AWS](#note-aws) below.
 <a name="note-platforms"></a>
 ## Note on Supported Platforms
 
-We have tested extensively on the operating systems listed above. It may be possible to run npm On-Site on other systems, but, at this time, no other systems are officially supported.
+We have tested extensively on the operating systems listed above. It may be possible to run npm Enterprise on other systems, but, at this time, no other systems are officially supported.
 
 We do our best to support as many systems as possible. If you have special requirements or feedback for other platforms, please reach out to us at support@npmjs.com. We'd love to work with you.
 
-You can also check for system issues on the <a href="https://github.com/npm/npmo-installer/issues" target="_blank">npmo-installer GitHub repo</a>.
+You can also check for system issues on the <a href="https://github.com/npm/npme-installer/issues" target="_blank">npme-installer GitHub repo</a>.
 
 <a name="note-space"></a>
 ## Note on Disk Space
@@ -44,7 +44,7 @@ For example, the full public registry hosts at least 200,000 packages with an av
 
 Therefore, a server with 50 - 100 GB is a good choice for most registries.
 
-Please reserve at least 6 GB for OS resources and npm On-Site appliance containers.
+Please reserve at least 6 GB for OS resources and npm Enterprise appliance containers.
 
 Once installed, you can configure where registry data is stored on your server via the "Storage" paths on the "Settings" page of the admin web console (port 8800). For details on configuring your On-Site instance, please see [this page](/enterprise/server-configuration).
 

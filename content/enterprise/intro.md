@@ -4,15 +4,15 @@ title: Quickstart
 featured: true
 -->
 
-# npm On-Site Quickstart
+# npm Enterprise Quickstart
 
-This is the fastest way to get started with npm On-Site - your own private npm registry and website!
+This is the fastest way to get started with npm Enterprise - your own private npm registry and website!
 
 ## tl;dr
 
 Here's what we're going to cover in this guide:
 
-1. [Install npm On-Site on your server](#1-install)
+1. [Install npm Enterprise on your server](#1-install)
 2. [Configure and start your On-Site instance](#2-configure-server)
 3. [Configure the npm CLI to talk to your registry](#3-configure-client)
 4. [Publish, install, and search for packages](#4-use)
@@ -24,7 +24,7 @@ Here's a quick video to help walk you through this process:
 <iframe width="640" height="480" src="https://www.youtube.com/embed/mKMaG0cixXw" frameborder="0" allowfullscreen></iframe>
 
 <a name="1-install"></a>
-## 1. Install npm On-Site on your server
+## 1. Install npm Enterprise on your server
 
 - Provision a modern Linux server fulfilling the [prereqs](/enterprise/requirements)
 
@@ -58,10 +58,10 @@ Here's a quick video to help walk you through this process:
     $ node -v && npm -v
     ```
 
-- Use npm to install `npmo`
+- Use npm to install `npme`
 
     ```
-    $ sudo npm install npmo -g --unsafe
+    $ sudo npm install npme -g --unsafe
     ```
 
     Watch for and answer any prompts.
